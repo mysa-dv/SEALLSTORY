@@ -1,207 +1,4 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>OMNIVERSE</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Font Fantasy -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at top, #1a0129, #0b0015 60%);
-      color: #eee;
-    }
-
-    header {
-      padding: 30px 50px;
-      font-family: 'Cinzel', serif;
-      font-size: 50px;
-      letter-spacing: 3px;
-      color: #c77dff;
-      text-shadow: 0 0 15px #7b2cbf;
-    }
-
-    .subtitle {
-      padding-left: 50px;
-      font-size: 18px;
-      opacity: 0.7;
-      margin-top: -15px;
-    }
-
-    .container {
-      padding: 40px 50px;
-    }
-
-    h2 {
-      font-family: 'Cinzel', serif;
-      font-size: 30px;
-      margin-bottom: 30px;
-      color: #d0aaff;
-    }
-
-    .novel-card {
-      display: flex;
-      gap: 20px;
-      background: rgba(255,255,255,0.05);
-      padding: 20px;
-      border-radius: 16px;
-      margin-bottom: 30px;
-      transition: 0.3s;
-      align-items: center;
-      border: 1px solid rgba(199,125,255,0.2);
-    }
-
-    .novel-card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 20px rgba(123,44,191,0.6);
-      background: rgba(255,255,255,0.08);
-    }
-
-    .cover {
-      width: 110px;
-      height: 160px;
-      border-radius: 10px;
-      object-fit: cover;
-      box-shadow: 0 0 15px rgba(199,125,255,0.5);
-    }
-
-    .novel-content {
-      flex: 1;
-    }
-
-    .novel-title {
-      font-size: 24px;
-      font-weight: 600;
-      margin-bottom: 5px;
-      color: #ffffff;
-    }
-
-    .badge {
-      display: inline-block;
-      background: #7b2cbf;
-      padding: 4px 10px;
-      font-size: 12px;
-      border-radius: 20px;
-      margin-bottom: 8px;
-    }
-
-    .novel-info {
-      font-size: 16px;
-      opacity: 0.85;
-      margin-bottom: 10px;
-    }
-
-    .read-btn {
-      display: inline-block;
-      padding: 8px 18px;
-      background: linear-gradient(45deg, #9d4edd, #7b2cbf);
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 500;
-      font-size: 15px;
-      transition: 0.3s;
-    }
-
-    .read-btn:hover {
-      box-shadow: 0 0 15px #9d4edd;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      opacity: 0.5;
-      font-size: 14px;
-      border-top: 1px solid rgba(255,255,255,0.1);
-      margin-top: 50px;
-    }
-
-    @media (max-width: 600px) {
-      .novel-card {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .cover {
-        width: 100%;
-        height: auto;
-      }
-    }
-.novel-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.novel-card a {
-  text-decoration: none;
-  color: white;
-}
-
-.novel-card {
-  transition: 0.3s;
-}
-
-.novel-card:hover {
-  transform: scale(1.03);
-}
-
-.cover {
-  width: 100%;
-  height: 240px;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 0 15px rgba(123,44,191,0.5);
-}
-
-.novel-title {
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 8px;
-}
-
-.novel-info {
-  font-size: 13px;
-  opacity: 0.7;
-    }
-  </style>
-</head>
-
-<body>
-<!-- OVERLAY -->
-<div class="overlay" onclick="closeMenu()"></div>
-
-<!-- SIDEBAR -->
-<div class="sidebar">
-  <div class="sidebar-header">OMNIVERSE</div>
-  <div class="sidebar-menu">
-    <a href="#">🏠 Home</a>
-    <a href="#">🔖 Bookmark</a>
-    <a href="#">🔎 Search</a>
-    <a href="#">⚙️ Setting</a>
-    <a href="#">✉️ Contact</a>
-  </div>
-</div>
-<header>🌌OMNIVERSE</header>
-<div class="subtitle">Where worlds collide and legends are born.</div>
-
-<div class="container">
-  <div class="container">
-  <h2>📖 Chronicles</h2>
-
-<div class="novel-grid">
-
-  <div class="novel-card">
-    <a href="novel1.html">
-      <img src="cover1.jpg" class="cover">
-      <div class="novel-title">The Last Mage</div>
-      <div class="novel-info">Fantasy • 12 Chapters</div>
-    </a>
-  </div>
-<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -209,109 +6,58 @@
 <title>OMNIVERSE</title>
 
 <style>
-/* ===== SIDEBAR ===== */
-.sidebar{
-  position:fixed;
-  top:0;
-  left:-260px;
-  width:250px;
-  height:100%;
-  background:linear-gradient(to bottom,#ffffff,#eaf2ff);
-  box-shadow:2px 0 15px rgba(0,0,0,0.1);
-  transition:0.3s ease;
-  z-index:2000;
-  padding-top:20px;
-}
 
-.sidebar.active{
-  left:0;
-}
-
-.sidebar-header{
-  font-size:18px;
-  font-weight:700;
-  padding:15px 20px;
-  color:#3355aa;
-}
-
-.sidebar-menu a{
-  display:block;
-  padding:12px 20px;
-  text-decoration:none;
-  color:#1a2a4f;
-  font-size:14px;
-  transition:0.2s;
-}
-
-.sidebar-menu a:hover{
-  background:#dde6ff;
-}
-
-/* OVERLAY */
-.overlay{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.3);
-  opacity:0;
-  visibility:hidden;
-  transition:0.3s;
-  z-index:1500;
-}
-
-.overlay.active{
-  opacity:1;
-  visibility:visible;
-  }
 /* ===== BODY ===== */
 body{
   margin:0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #e8f1ff, #f6f9ff);
+  background: linear-gradient(180deg,#eaf2ff,#f7faff);
   color:#1a2a4f;
+  padding-top:70px;
 }
 
-/* ===== TOP HEADER ===== */
+/* ===== HEADER (STICKY) ===== */
 .top-header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
   display:flex;
   justify-content:space-between;
   align-items:center;
   padding:15px 20px;
-  background:#ffffff;
-  position:sticky;
-  top:0;
+  background:white;
+  box-shadow:0 2px 12px rgba(0,0,0,0.06);
   z-index:1000;
-  box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
 .menu-btn{
-  font-size:22px;
+  font-size:20px;
   cursor:pointer;
 }
 
-.logo{
-  font-size:18px;
+.logo-small{
   font-weight:600;
 }
 
 .account{
-  font-size:14px;
+  font-size:18px;
   cursor:pointer;
 }
 
-/* ===== TITLE SECTION ===== */
-.title-section{
-  padding:20px;
+/* ===== HERO TITLE ===== */
+.hero{
+  text-align:center;
+  padding:30px 20px 20px;
 }
 
-.main-title{
+.hero h1{
   font-size:28px;
-  font-weight:700;
+  margin:0;
 }
 
-.sub-title{
+.hero p{
+  margin-top:8px;
   font-size:14px;
   opacity:0.7;
 }
@@ -319,9 +65,9 @@ body{
 /* ===== NAVBAR ===== */
 .navbar{
   display:flex;
+  gap:25px;
+  padding:12px 20px;
   overflow-x:auto;
-  gap:20px;
-  padding:10px 20px;
   background:white;
   border-top:1px solid #dde6ff;
   border-bottom:1px solid #dde6ff;
@@ -330,9 +76,9 @@ body{
 .nav-item{
   flex:0 0 auto;
   text-align:center;
-  font-size:13px;
+  font-size:12px;
+  color:#3b5ed7;
   cursor:pointer;
-  color:#3355aa;
 }
 
 .nav-item span{
@@ -340,17 +86,16 @@ body{
   font-size:20px;
 }
 
-/* ===== SECTION TITLE ===== */
+/* ===== SECTION ===== */
 .section{
   padding:20px;
 }
 
 .section h3{
   margin-bottom:15px;
-  font-size:16px;
 }
 
-/* ===== NOVEL GRID ===== */
+/* ===== GRID ===== */
 .novel-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -362,12 +107,12 @@ body{
   height:170px;
   border-radius:12px;
   object-fit:cover;
-  box-shadow:0 4px 12px rgba(51,85,170,0.2);
+  box-shadow:0 4px 14px rgba(0,0,0,0.08);
 }
 
 .novel-title{
   font-size:13px;
-  margin-top:5px;
+  margin-top:6px;
   font-weight:600;
 }
 
@@ -383,55 +128,48 @@ body{
 
 <!-- HEADER -->
 <div class="top-header">
-<div class="menu-btn" onclick="openMenu()">☰</div>
-  <div class="logo">OMNIVERSE</div>
-  <div class="account">Reader</div>
+  <div class="menu-btn">☰ OMNIVERSEREADER</div>
+  <div class="account">👤</div>
 </div>
 
-<!-- TITLE -->
-<div class="title-section">
-  <div class="main-title">OMNIVERSE</div>
-  <div class="sub-title">Explore the Infinite Stories</div>
+<!-- HERO -->
+<div class="hero">
+  <h1>OMNIVERSE</h1>
+  <p>story world</p>
 </div>
 
 <!-- NAVBAR -->
 <div class="navbar">
   <div class="nav-item"><span>🏠</span>Home</div>
-  <div class="nav-item"><span>❤️</span>Follow</div>
+  <div class="nav-item"><span>📚</span>Genre</div>
   <div class="nav-item"><span>⬆️</span>Update</div>
   <div class="nav-item"><span>🕒</span>Recently</div>
   <div class="nav-item"><span>🔎</span>Search</div>
 </div>
 
-<!-- HOME SECTION -->
+<!-- NEW UPDATE -->
 <div class="section">
-  <h3>All Story</h3>
+  <h3>New Update</h3>
   <div class="novel-grid">
-
     <div>
       <img src="cover1.jpg" class="cover">
       <div class="novel-title">The Last Mage</div>
       <div class="novel-info">Fantasy • 12 Ch</div>
     </div>
+  </div>
+</div>
 
+<!-- ALL STORY -->
+<div class="section">
+  <h3>All Story</h3>
+  <div class="novel-grid">
     <div>
       <img src="cover2.jpg" class="cover">
       <div class="novel-title">Shadow Rebirth</div>
       <div class="novel-info">Dark Fantasy</div>
     </div>
-
   </div>
 </div>
-<script>
-function openMenu(){
-  document.querySelector(".sidebar").classList.add("active");
-  document.querySelector(".overlay").classList.add("active");
-}
 
-function closeMenu(){
-  document.querySelector(".sidebar").classList.remove("active");
-  document.querySelector(".overlay").classList.remove("active");
-}
-</script>
 </body>
 </html>
