@@ -131,6 +131,54 @@
       }
     }
   </style>
+  novel-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.novel-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.novel-row::-webkit-scrollbar-thumb {
+  background: #7b2cbf;
+  border-radius: 10px;
+}
+
+.novel-card {
+  min-width: 160px;
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 14px;
+  transition: 0.3s;
+  border: 1px solid rgba(199,125,255,0.2);
+  text-align: center;
+}
+
+.novel-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(123,44,191,0.6);
+}
+
+.cover {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.novel-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.novel-info {
+  font-size: 13px;
+  opacity: 0.8;
+}
 </head>
 
 <body>
@@ -139,30 +187,25 @@
 <div class="subtitle">Where worlds collide and legends are born.</div>
 
 <div class="container">
+  <div class="container">
   <h2>📖 Chronicles</h2>
 
-  <div class="novel-card">
-    <img src="cover1.jpg" class="cover">
-    <div class="novel-content">
-      <div class="badge">🔥 NEW</div>
+  <div class="novel-row">
+
+    <div class="novel-card">
+      <img src="cover1.jpg" class="cover">
       <div class="novel-title">The Last Mage</div>
-      <div class="novel-info">Author: Admin | Genre: Fantasy | 12 Chapters</div>
-      <a href="novel1.html" class="read-btn">Enter Realm</a>
+      <div class="novel-info">Fantasy • 12 Chapters</div>
     </div>
-  </div>
 
-  <div class="novel-card">
-    <img src="cover2.jpg" class="cover">
-    <div class="novel-content">
-      <div class="badge">⭐ HOT</div>
+    <div class="novel-card">
+      <img src="cover2.jpg" class="cover">
       <div class="novel-title">Shadow Rebirth</div>
-      <div class="novel-info">Author: Admin | Genre: Dark Fantasy | 8 Chapters</div>
-      <a href="novel2.html" class="read-btn">Enter Realm</a>
+      <div class="novel-info">Dark Fantasy • 8 Chapters</div>
     </div>
+
   </div>
-
-</div>
-
+  </div>
 <footer>
   © 2026 OMNIVERSE — Crafted in the Void.
 </footer>
