@@ -62,24 +62,29 @@ body{
 }
 
 /* ===== NAVBAR ===== */
-.navbar{
+..navbar{
   display:flex;
-  justify-content:center;   /* INI YANG BIKIN RATA TENGAH */
-  gap:18px;
-  padding:12px 20px;
-  background: transparent;  /* HAPUS PUTIH */
-  border:none;              /* HAPUS GARIS */
-  };
-}
+  justify-content:space-evenly; /* ini bikin benar-benar rata */
+  align-items:center;
+  padding:15px 0;
+  background: transparent;
+  }
 
 .nav-item{
-  flex:0 0 auto;
-  text-align:center;
-  font-size:10px;
-  color:#3b5ed7;
+  display:flex;
+  flex-direction:column;   /* ICON DI ATAS */
+  align-items:center;
+  justify-content:center;
+  font-size:13px;
+  color:#2c3e70;
   cursor:pointer;
-  transition:0.2s;
-}
+  }
+  
+  .nav-item span{
+  font-size:22px;
+  line-height:1;
+  margin-bottom:4px; /* jarak icon ke teks */
+  }
 
 .nav-item:hover{
   transform:translateY(-2px);
