@@ -6,7 +6,43 @@
 <title>OMNIVERSE</title>
 
 <style>
+.sidebar{
+  position:fixed;
+  top:0;
+  left:-260px;
+  width:260px;
+  height:100%;
+  background:#0f172a;
+  padding:20px;
+  transition:0.3s;
+  z-index:999;
+}
 
+.sidebar.active{
+  left:0;
+}
+
+.sidebar a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  padding:12px 0;
+}
+
+.overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.4);
+  display:none;
+  z-index:998;
+}
+
+.overlay.active{
+  display:block;
+  }
 /* ===== BODY ===== */
 body{
   margin:0;
@@ -128,11 +164,20 @@ body{
 </head>
 
 <body>
+<div class="sidebar" id="sidebar">
+  <h2>Menu</h2>
+  <a href="#">Home</a>
+  <a href="#">Genre</a>
+  <a href="#">Update</a>
+  <a href="#">Recently</a>
+  <a href="#">Search</a>
+</div>
 
+<div class="overlay" id="overlay" onclick="closeSidebar()"></div>
 <!-- HEADER -->
 <div class="top-header">
-  <div class="menu-btn">☰ OMNIVERSEreader</div>
-  <div class="account">👤</div>
+<div class="menu-btn" onclick="openSidebar()">☰ OMNIVERSEREader</div>
+<div class="account">👤</div>
 </div>
 
 <!-- HERO -->
@@ -192,6 +237,16 @@ body{
     </div>
   </div>
 </div>
+<script>
+function openSidebar(){
+  document.getElementById("sidebar").classList.add("active");
+  document.getElementById("overlay").classList.add("active");
+}
 
+function closeSidebar(){
+  document.getElementById("sidebar").classList.remove("active");
+  document.getElementById("overlay").classList.remove("active");
+}
+</script>
 </body>
 </html>
