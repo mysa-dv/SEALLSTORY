@@ -68,6 +68,35 @@
   opacity:1;
   visibility:visible;
 }
+  .sidebar{
+  position:fixed;
+  top:0;
+  left:-250px;
+  width:250px;
+  height:100%;
+  background:#0f2a4d;
+  transition:0.3s;
+  z-index:2000;
+}
+
+.sidebar.active{
+  left:0;
+}
+
+.overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.4);
+  opacity:0;
+  pointer-events:none;
+  transition:0.3s;
+  z-index:1500;
+}
+
+.overlay.active{
+  opacity:1;
+  pointer-events:auto;
+  }
 /* ===== BODY ===== */
 body{
   margin:0;
@@ -192,7 +221,7 @@ body{
   <a href="#">Setting</a>
   <a href="#">Contact</a>
 </div>
-
+<div class="overlay"></div>
 <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
 <!-- HEADER -->
 <div class="top-header">
@@ -267,6 +296,21 @@ function closeSidebar(){
   document.getElementById("sidebar").classList.remove("active");
   document.getElementById("overlay").classList.remove("active");
 }
+  <script>
+const menuBtn = document.querySelector(".menu-btn");
+const sidebar = document.querySelector(".sidebar");
+const overlay = document.querySelector(".overlay");
+
+menuBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+  overlay.classList.toggle("active");
+});
+
+overlay.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+  overlay.classList.remove("active");
+});
+</script>
 </script>
 </body>
 </html>
