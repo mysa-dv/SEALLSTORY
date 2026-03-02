@@ -80,3 +80,12 @@ p {
 .section a:hover {
   transform: translateX(8px);
 }
+.status.ongoing {
+  border: 2px solid cyan;
+  box-shadow: 0 0 8px cyan;
+}
+
+.status.complete {
+  border: 2px solid lime;
+  box-shadow: 0 0 8px lime;
+}
