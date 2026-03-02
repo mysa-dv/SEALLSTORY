@@ -93,3 +93,6 @@ p strong {
   color: #94a3b8;
   font-weight: 600;
   }
+.container p strong {
+  color: #94a3b8 !important;
+}
