@@ -155,3 +155,101 @@ body{
 }
 
 .cover{
+  width:100%;
+  height:170px;
+  border-radius:12px;
+  object-fit:cover;
+  box-shadow:0 4px 14px rgba(0,0,0,0.08);
+}
+
+.novel-title{
+  font-size:13px;
+  margin-top:6px;
+  font-weight:600;
+}
+
+.novel-info{
+  font-size:11px;
+  opacity:0.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2>Menu</h2>
+  <a href="#">Home</a>
+  <a href="#">Bookmark</a>
+  <a href="#">All Story</a>
+  <a href="#">Setting</a>
+  <a href="#">Contact</a>
+</div>
+
+<div class="overlay"></div>
+
+<!-- HEADER -->
+<div class="top-header">
+  <div class="menu-btn">☰ OMNIVERSEREader</div>
+  <div class="account">👤</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>🌌 OMNIVERSE</h1>
+  <p>story world</p>
+</div>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="nav-item"><span>🏠</span>Home</div>
+  <div class="nav-item"><span>📚</span>Genre</div>
+  <div class="nav-item"><span>⬆️</span>Update</div>
+  <div class="nav-item"><span>🕒</span>Recently</div>
+  <div class="nav-item"><span>🔍</span>Search</div>
+</div>
+
+<!-- NEW UPDATE -->
+<div class="section">
+  <h3>New Update</h3>
+  <div class="novel-grid">
+    <div>
+      <img src="cover1.jpg" class="cover">
+      <div class="novel-title">The Last Mage</div>
+      <div class="novel-info">Fantasy • 12 Ch</div>
+    </div>
+  </div>
+</div>
+
+<!-- ALL STORY -->
+<div class="section">
+  <h3>All Story</h3>
+  <div class="novel-grid">
+    <div>
+      <img src="cover2.jpg" class="cover">
+      <div class="novel-title">Shadow Rebirth</div>
+      <div class="novel-info">Dark Fantasy</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const menuBtn = document.querySelector(".menu-btn");
+const sidebar = document.querySelector(".sidebar");
+const overlay = document.querySelector(".overlay");
+
+menuBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+  overlay.classList.toggle("active");
+});
+
+overlay.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+  overlay.classList.remove("active");
+});
+</script>
+
+</body>
+  </html>
