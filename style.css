@@ -1,7 +1,10 @@
 body {
   background: black;
 }
-
+body {
+  background: black;
+  color: #e2e8f0; /* warna teks utama soft white */
+}
 /* ===== DETAIL NOVEL LEBIH PADAT & BESAR ===== */
 
 .container {
