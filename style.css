@@ -1,24 +1,7 @@
 body {
   background: black;
 }
-I/* ===== NOVEL DETAIL FONT SIZE ===== */
 
-h1{
-  font-size: 36px;
-}
-
-p{
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.section h3{
-  font-size: 24px;
-}
-
-.section a{
-  font-size: 18px;
-}
 /* ===== DETAIL NOVEL LEBIH PADAT & BESAR ===== */
 
 .container {
