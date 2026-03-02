@@ -89,3 +89,7 @@ p {
   border: 2px solid lime;
   box-shadow: 0 0 8px lime;
 }
+p strong {
+  color: #94a3b8;
+  font-weight: 600;
+  }
