@@ -1,7 +1,7 @@
 body {
   background: black;
 }
-/* ===== NOVEL DETAIL FONT SIZE ===== */
+I/* ===== NOVEL DETAIL FONT SIZE ===== */
 
 h1{
   font-size: 36px;
@@ -18,4 +18,82 @@ p{
 
 .section a{
   font-size: 18px;
+}
+/* ===== DETAIL NOVEL LEBIH PADAT & BESAR ===== */
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.section {
+  padding: 25px;
+}
+
+.section h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.section a {
+  font-size: 20px;
+  display: block;
+  padding: 10px 0;
+}
+/* ===== CINEMATIC NOVEL DETAIL UPGRADE ===== */
+
+/* Container lebih lebar dan rapi */
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Judul besar cinematic */
+h1 {
+  font-size: 52px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* Info author & genre */
+p {
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+/* Box section lebih elegan */
+.section {
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+}
+
+/* Judul Daftar Chapter */
+.section h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* List chapter lebih modern */
+.section a {
+  font-size: 20px;
+  display: block;
+  padding: 14px 0;
+  transition: 0.3s ease;
+}
+
+/* Hover smooth */
+.section a:hover {
+  transform: translateX(8px);
 }
