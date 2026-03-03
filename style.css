@@ -152,3 +152,6 @@ p strong {
 .chapter-container p {
   color: #d6e0f0;
   }
+.chapter-nav {
+  margin-top: 100px;
+}
