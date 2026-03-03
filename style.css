@@ -96,3 +96,31 @@ p strong {
 .container p strong {
   color: #94a3b8 !important;
 }
+/* ===== CHAPTER STYLE ===== */
+
+.chapter-container {
+  max-width: 750px;
+  margin: 80px auto;
+  padding: 0 20px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.chapter-container h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+
+.chapter-container p {
+  font-size: 20px;
+  line-height: 2;
+  margin-bottom: 24px;
+  text-align: justify;
+}
+
+.chapter-container a {
+  display: inline-block;
+  margin-top: 40px;
+  color: #38bdf8;
+  text-decoration: none;
+  }
